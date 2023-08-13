@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(251, 201, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-nav a:hover {
+    background-color: #333;
+    color: #ff9a8b;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(249, 222, 132, 0.883);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 50px;
+    padding: 20px;
+}
+
+.disc {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 35px 35px 20px 20px;
+    padding: 20px;
+}
+
+.head {
+    font-weight: 1000;
+    font-size: 1.7em;
+    margin: 10px 0;
+}
+
+.sub-head {
+    letter-spacing: 0.2;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+span {
+    color: rgba(188, 27, 27, 0.869);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.left, .right {
+    font-size: 1em;
+    font-style: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.right {
+    background-color: rgba(244, 42, 42, 0.977);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(254, 42, 42, 0.955), 0 6px 20px 0 rgba(254, 42, 42, 0.955);
+}
+
+.left {
+    background-color: white;
+    cursor: pointer;
+}
+
+.right:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
